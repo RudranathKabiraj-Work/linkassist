@@ -1,25 +1,36 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import styles from './Hero.module.css';
 
 /* ─── Inline MiniPost — matches V2 MiniPost.jsx exactly ─────────────────── */
-function MiniPost({ name, role, time, body, likes, comments, pinned, avatarGrad, isLogo }) {
+function MiniPost({ name, role, time, body, likes, comments, pinned, avatar, avatarGrad, isLogo, width }) {
   return (
-    <div className={styles.miniPost}>
+    <div className={styles.miniPost} style={width ? { width } : undefined}>
       <div className={styles.mpHead}>
-        <div
-          className={styles.mpAvatar}
-          style={isLogo
-            ? { background: '#0A66C2', borderRadius: 10 }
-            : { background: avatarGrad }
-          }
-        >
-          {isLogo && (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
-            </svg>
-          )}
-        </div>
+        {avatar ? (
+          <img
+            src={avatar}
+            alt=""
+            className={styles.mpAvatar}
+            style={{ objectFit: 'cover' }}
+          />
+        ) : (
+          <div
+            className={styles.mpAvatar}
+            style={isLogo
+              ? { background: '#0A66C2', borderRadius: 10 }
+              : { background: avatarGrad }
+            }
+          >
+            {isLogo && (
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+              </svg>
+            )}
+          </div>
+        )}
         <div className={styles.mpMeta}>
           <div className={styles.mpNameRow}>
             <span className={styles.mpName}>{name}</span>
@@ -42,11 +53,31 @@ function MiniPost({ name, role, time, body, likes, comments, pinned, avatarGrad,
       <div className={styles.mpBody}>{body}</div>
 
       <div className={styles.mpFoot}>
-        <div className={styles.mpReacts}>
-          <span className={styles.react} style={{ background: '#378FE9' }} />
-          <span className={styles.react} style={{ background: '#E16745', marginLeft: -4 }} />
-          <span className={styles.react} style={{ background: '#DFA249', marginLeft: -4 }} />
-          <span className={styles.mpLikes}>{likes}</span>
+        <div className={styles.mpReacts} style={{ display: 'flex', alignItems: 'center' }}>
+          <span style={{ display: 'inline-flex' }}>
+            {[
+              ["#378FE9", "M7 10v12M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"],
+              ["#E16745", "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"],
+              ["#DFA249", "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.8.8 1.3 1.5 1.5 2.5M9 18h6M10 22h4"]
+            ].map(([fill, d], i) => (
+              <span
+                key={i}
+                className={styles.react}
+                style={{
+                  background: fill,
+                  marginLeft: i === 0 ? 0 : -4,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <svg width="8" height="8" viewBox="0 0 24 24" fill="#fff" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d={d} />
+                </svg>
+              </span>
+            ))}
+          </span>
+          <span className={styles.mpLikes} style={{ marginLeft: 6 }}>{likes}</span>
         </div>
         <div>{comments} comments</div>
       </div>
@@ -56,6 +87,7 @@ function MiniPost({ name, role, time, body, likes, comments, pinned, avatarGrad,
 
 /* ─── Hero ───────────────────────────────────────────────────────────────── */
 export default function Hero() {
+  const router = useRouter();
   const fullA = "I quit posting on LinkedIn for 6 months. Here's what nobody warned me about ↓";
   const [typed, setTyped] = useState('');
 
@@ -79,7 +111,21 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
-      <div className={`container ${styles.heroGrid}`}>
+      {/* Decorative soft blobs */}
+      <div aria-hidden style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
+        <div style={{
+          position: "absolute", top: -120, right: -80, width: 520, height: 520,
+          background: "radial-gradient(closest-side, rgba(0,102,178,0.20), transparent 70%)",
+          filter: "blur(8px)"
+        }} />
+        <div style={{
+          position: "absolute", bottom: -160, left: -100, width: 480, height: 480,
+          background: "radial-gradient(closest-side, rgba(10,102,194,0.18), transparent 70%)",
+          filter: "blur(8px)"
+        }} />
+      </div>
+
+      <div className={styles.heroGrid}>
 
         {/* ── Left: copy ── */}
         <div className="reveal in">
@@ -103,10 +149,59 @@ export default function Hero() {
           </p>
 
           <div className={styles.heroCta}>
-            <a href="#pricing" className="btn btn-primary btn-lg">
-              Start Your Free Trial <span className="arrow">→</span>
-            </a>
-            <a href="#how" className="btn btn-ghost btn-lg">
+            <motion.button
+              whileHover="hover"
+              whileTap={{ scale: 0.96 }}
+              variants={{
+                hover: {
+                  scale: 1.03,
+                  background: "linear-gradient(135deg, #054a91 0%, #06346b 100%)",
+                  boxShadow: "0 14px 30px -4px rgba(3, 28, 66, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.8)",
+                },
+              }}
+              onClick={() => router.push("/pricing")}
+              style={{
+                position: "relative",
+                overflow: "hidden",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 8,
+                background: "linear-gradient(135deg, #0A66C2 0%, #1c83d3 100%)",
+                color: "#fff",
+                border: "1px solid rgba(255, 255, 255, 0.4)",
+                padding: "5px 34px",
+                borderRadius: 9999,
+                cursor: "pointer",
+                font: "600 16px/1 Geist",
+                letterSpacing: "-0.005em",
+                boxShadow: "0 6px 16px -2px rgba(0, 102, 178, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6)",
+              }}
+            >
+              <span style={{ position: "relative", zIndex: 1 }}>Start Your Free Trial</span>
+              <motion.span
+                variants={{
+                  hover: { x: 4 },
+                }}
+                transition={{ duration: 0.2 }}
+                style={{
+                  position: "relative",
+                  zIndex: 1,
+                  width: 19,
+                  height: 19,
+                  borderRadius: 9999,
+                  background: "rgba(255,255,255,0.2)",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
+              </motion.span>
+            </motion.button>
+            <a href="#how-it-works" className="btn btn-ghost btn-lg">
               See how it works
             </a>
           </div>
@@ -134,7 +229,8 @@ export default function Hero() {
                   body="After 3 years of consulting, I've seen one pattern in every founder who scaled past $1M ARR."
                   likes="3.4K"
                   comments="212"
-                  avatarGrad="linear-gradient(135deg,#cfe0f7,#9dc2ff)"
+                  avatar="/assets/testimonials/prashum-lucky.png"
+                  width={280}
                 />
               </div>
 
@@ -148,7 +244,8 @@ export default function Hero() {
                   likes="—"
                   comments="—"
                   pinned
-                  avatarGrad="linear-gradient(135deg,#dfe7f2,#b9c6da)"
+                  avatar="/assets/testimonials/pranav-prathi.png"
+                  width={280}
                 />
               </div>
 
@@ -167,7 +264,8 @@ export default function Hero() {
                     role="Drafting · style: 'Aanya M.'"
                     time="Just now"
                     pinned
-                    isLogo
+                    avatar="/assets/logo-icon.png"
+                    width={280}
                     body={
                       <>
                         {typed}

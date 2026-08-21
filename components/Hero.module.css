@@ -1,17 +1,30 @@
 /* ── Hero wrapper ── */
 .hero {
-  padding: 76px 0 90px;
-  background: linear-gradient(180deg, #fff 0%, #F3F8FF 100%);
+  padding: 128px 0 56px;
+  background: #F8FBFF; /* same as linkassist-v2 HeroV2 (V2.cream) */
   position: relative;
   overflow: hidden;
 }
 
 /* ── Two-column grid ── */
+/* Geometry mirrors NavV2: page padding (16/32px) + centered 1180px content,
+   so the hero's left edge lines up exactly with the navbar pill. */
 .heroGrid {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   gap: 56px;
   align-items: center;
+  max-width: 1212px; /* 1180 + 2×16 */
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .heroGrid {
+    max-width: 1244px; /* 1180 + 2×32 */
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 /* ── Left copy ── */
@@ -40,7 +53,7 @@
 }
 
 .subhead {
-  font-size: clamp(17px, 1.9vw, 21px);
+  font-size: clamp(15.5px, 1.7vw, 18.5px);
   font-weight: 600;
   color: var(--ink-2);
   margin: 20px 0 16px;
@@ -52,6 +65,10 @@
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 30px;
+}
+.heroCta .btn-lg {
+  padding: 5px 36px;
+  font-size: 16px;
 }
 
 /* ── Right column wrapper ── */
@@ -69,7 +86,7 @@
   height: 520px;
   position: relative;
   /* Push visual stage even further rightward */
-  margin-right: -110px;
+  margin-right: -70px;
 }
 
 /* ── Card stage: exact 550×520 — matches V2 container ── */
@@ -84,6 +101,7 @@
 .lcCard {
   position: absolute;
   transform: rotate(var(--r, 0deg));
+  animation: lcFloat 4.5s ease-in-out infinite;
   transition: box-shadow 0.3s ease;
   will-change: transform;
 }

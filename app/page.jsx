@@ -1,6 +1,7 @@
 'use client';
 import useScrollReveal from '@/hooks/useScrollReveal';
-import Navbar from '@/components/Navbar';
+import SmoothScrollProvider from '@/components/SmoothScrollProvider';
+import NavV2 from '@/components/linkassist/NavV2';
 import Hero from '@/components/Hero';
 import TrustBar from '@/components/TrustBar';
 import IntroNarrative from '@/components/IntroNarrative';
@@ -17,7 +18,6 @@ import OutcomesSection from '@/components/OutcomesSection';
 import AudienceSection from '@/components/AudienceSection';
 import DifferentiatorsSection from '@/components/DifferentiatorsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import PricingSection from '@/components/PricingSection';
 import FaqSection from '@/components/FaqSection';
 import FinalCta from '@/components/FinalCta';
 import Footer from '@/components/Footer';
@@ -26,8 +26,8 @@ export default function Home() {
   useScrollReveal();
 
   return (
-    <>
-      <Navbar />
+    <SmoothScrollProvider>
+      <NavV2 />
       <main>
         <Hero />
         <TrustBar />
@@ -45,11 +45,10 @@ export default function Home() {
         <AudienceSection />
         <DifferentiatorsSection />
         <TestimonialsSection />
-        <PricingSection />
         <FaqSection />
         <FinalCta />
       </main>
       <Footer />
-    </>
+    </SmoothScrollProvider>
   );
 }

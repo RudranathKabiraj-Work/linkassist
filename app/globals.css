@@ -1,4 +1,8 @@
+@layer theme, base, components, utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
 
 :root {
   --ink: #0A1626;
@@ -22,6 +26,55 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tailwind preflight essentials — parity with V2's full tailwindcss import.
+   Must be layered so Tailwind utilities (px-*, bg-*, rounded-*) override them. */
+@layer base {
+  *, ::before, ::after {
+    border: 0 solid;
+  }
+  button, input, select, optgroup, textarea {
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
+/* V2 page scope — replicates the rest of Tailwind preflight (spacing/heading/
+   list resets) for pages copied from linkassist-v2, without touching the
+   existing home page which relies on user-agent defaults. */
+@layer base {
+  /* Inherited font parity: V2 has no body font-family, so unstyled text falls
+     back to Tailwind's default sans stack — not this site's Inter. */
+  .v2-page {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  }
+  .v2-page :where(*) {
+    margin: 0;
+    padding: 0;
+  }
+  .v2-page :where(h1, h2, h3, h4, h5, h6) {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .v2-page :where(ul, ol) {
+    list-style: none;
+  }
+  .v2-page :where(img, svg, video, canvas) {
+    display: block;
+    vertical-align: middle;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -71,7 +124,15 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
-.h-xl { font-size: clamp(38px, 6vw, 66px); line-height: 1.02; font-weight: 900; }
+/* V2 pages: neutralize the home-page heading theme so copied sections
+   inherit colors/weights like they do under Tailwind preflight in V2. */
+.v2-page h1, .v2-page h2, .v2-page h3 {
+  color: inherit;
+  letter-spacing: normal;
+  font-weight: inherit;
+}
+
+.h-xl { font-size: clamp(33px, 5.1vw, 55px); line-height: 1.05; font-weight: 900; }
 .h-lg  { font-size: clamp(30px, 4.4vw, 50px); line-height: 1.05; }
 .h-md  { font-size: clamp(24px, 3vw, 34px); line-height: 1.12; }
 

@@ -1,0 +1,186 @@
+
+> linkassist@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.160:3000
+✓ Ready in 670ms
+✓ Running next.config.mjs took 35ms
+
+○ Compiling /pricing ...
+ GET /pricing 200 in 6.3s (next.js: 5.7s, application-code: 572ms)
+ GET /pricing 200 in 117ms (next.js: 7ms, application-code: 110ms)
+ GET /pricing 200 in 191ms (next.js: 17ms, application-code: 175ms)
+✓ Compiled in 296ms
+ GET /pricing 200 in 147ms (next.js: 7ms, application-code: 140ms)
+ GET /pricing 200 in 167ms (next.js: 8ms, application-code: 159ms)
+ GET / 200 in 104ms (next.js: 60ms, application-code: 45ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /pricing 200 in 29ms (next.js: 8ms, application-code: 21ms)
+✓ Compiled in 83ms
+ GET / 200 in 63ms (next.js: 13ms, application-code: 49ms)
+✓ Compiled in 4.9s
+ GET / 200 in 228ms (next.js: 44ms, application-code: 184ms)
+✓ Compiled in 265ms
+✓ Compiled in 1177ms
+ GET / 200 in 63ms (next.js: 9ms, application-code: 55ms)
+[browser] ./components/linkassist/PricingSections.jsx:340:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  338 |     </section>
+  339 |   );
+> 340 | }
+      | ^
+  341 |
+  342 | function PricingCard({ plan, billing, index = 0 }) {
+  343 |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/linkassist/PricingSections.jsx:
+./components/linkassist/PricingSections.jsx:340:1
+  338 |     </section>
+  339 |   );
+> 340 | }
+      | ^
+  341 |
+  342 | function PricingCard({ plan, billing, index = 0 }) {
+  343 |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+Import traces:
+  Client Component Browser:
+    ./components/linkassist/PricingSections.jsx [Client Component Browser]
+    ./app/pricing/page.js [Client Component Browser]
+    ./app/pricing/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/linkassist/PricingSections.jsx [Client Component SSR]
+    ./app/pricing/page.js [Client Component SSR]
+    ./app/pricing/page.js [Server Component] 
+[browser] ./components/linkassist/PricingSections.jsx:340:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  338 |     </section>
+  339 |   );
+> 340 | }
+      | ^
+  341 |
+  342 | function PricingCard({ plan, billing, index = 0 }) {
+  343 |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/linkassist/PricingSections.jsx:
+./components/linkassist/PricingSections.jsx:340:1
+  338 |     </section>
+  339 |   );
+> 340 | }
+      | ^
+  341 |
+  342 | function PricingCard({ plan, billing, index = 0 }) {
+  343 |   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+Import traces:
+  Client Component Browser:
+    ./components/linkassist/PricingSections.jsx [Client Component Browser]
+    ./app/pricing/page.js [Client Component Browser]
+    ./app/pricing/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/linkassist/PricingSections.jsx [Client Component SSR]
+    ./app/pricing/page.js [Client Component SSR]
+    ./app/pricing/page.js [Server Component] 
+ GET / 200 in 372ms (next.js: 73ms, application-code: 299ms)
+ GET /pricing 200 in 103ms (next.js: 69ms, application-code: 33ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /pricing 200 in 133ms (next.js: 41ms, application-code: 92ms)
+ GET /pricing 200 in 644ms (next.js: 39ms, application-code: 605ms)
+ GET /pricing 200 in 214ms (next.js: 5ms, application-code: 209ms)
+✓ Compiled in 2.1s
+ GET /pricing 200 in 224ms (next.js: 85ms, application-code: 139ms)
+ GET / 200 in 67ms (next.js: 17ms, application-code: 51ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 87ms (next.js: 50ms, application-code: 36ms)
+ GET / 200 in 420ms (next.js: 12ms, application-code: 408ms)
+✓ Compiled in 70ms
+✓ Compiled in 516ms
+ GET / 200 in 63ms (next.js: 19ms, application-code: 44ms)
+✓ Compiled in 239ms
+✓ Compiled in 61ms
+✓ Compiled in 44ms
+✓ Compiled in 1915ms
+ GET / 200 in 213ms (next.js: 39ms, application-code: 174ms)
+✓ Compiled in 313ms
+✓ Compiled in 71ms
+✓ Compiled in 2.4s
+ GET / 200 in 975ms (next.js: 42ms, application-code: 933ms)
+✓ Compiled in 67ms
+ GET /pricing 200 in 85ms (next.js: 48ms, application-code: 37ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 33ms (next.js: 6ms, application-code: 26ms)
+✓ Compiled in 771ms
+ GET / 200 in 51ms (next.js: 12ms, application-code: 39ms)
+✓ Compiled in 2.2s
+ GET / 200 in 256ms (next.js: 96ms, application-code: 161ms)
+✓ Compiled in 1091ms
+ GET / 200 in 348ms (next.js: 64ms, application-code: 284ms)
+✓ Compiled in 253ms
+ GET / 200 in 54ms (next.js: 10ms, application-code: 44ms)
+ GET / 200 in 39ms (next.js: 10ms, application-code: 29ms)
+✓ Compiled in 340ms
+✓ Compiled in 463ms
+ GET / 200 in 42ms (next.js: 9ms, application-code: 33ms)
+✓ Compiled in 942ms
+ GET / 200 in 310ms (next.js: 125ms, application-code: 185ms)
+✓ Compiled in 1320ms
+ GET / 200 in 82ms (next.js: 28ms, application-code: 54ms)
+✓ Compiled in 482ms
+✓ Compiled in 1433ms
+ GET / 200 in 120ms (next.js: 40ms, application-code: 80ms)
+✓ Compiled in 112ms
+ GET / 200 in 1665ms (next.js: 8ms, application-code: 1657ms)
+ GET / 200 in 76ms (next.js: 4ms, application-code: 72ms)
+ GET / 200 in 450ms (next.js: 10ms, application-code: 440ms)
+ GET / 200 in 213ms (next.js: 7ms, application-code: 207ms)
+ GET /pricing 200 in 113ms (next.js: 63ms, application-code: 50ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 33ms (next.js: 7ms, application-code: 26ms)
+✓ Compiled in 1290ms
+ GET / 200 in 206ms (next.js: 81ms, application-code: 124ms)
+✓ Compiled in 53ms
+✓ Compiled in 3.4s
+ GET / 200 in 218ms (next.js: 112ms, application-code: 106ms)
+ GET / 200 in 3.9s (next.js: 3.3s, application-code: 625ms)
+ GET / 200 in 38ms (next.js: 10ms, application-code: 28ms)
+✓ Compiled in 497ms
+✓ Compiled in 789ms
+ GET / 200 in 79ms (next.js: 16ms, application-code: 63ms)
+✓ Compiled in 2.2s
+ GET / 200 in 309ms (next.js: 72ms, application-code: 237ms)
+✓ Compiled in 2.3s
+ GET / 200 in 435ms (next.js: 118ms, application-code: 317ms)
+✓ Compiled in 115ms
+✓ Compiled in 802ms
+ GET / 200 in 161ms (next.js: 92ms, application-code: 69ms)
+✓ Compiled in 1248ms
+ GET / 200 in 109ms (next.js: 24ms, application-code: 84ms)
+✓ Compiled in 96ms
+ GET / 200 in 125ms (next.js: 6ms, application-code: 119ms)
+ GET / 200 in 84ms (next.js: 5ms, application-code: 79ms)
+ GET / 200 in 82ms (next.js: 5ms, application-code: 77ms)
+ GET / 200 in 168ms (next.js: 5ms, application-code: 163ms)
+ GET / 200 in 89ms (next.js: 4ms, application-code: 85ms)
+ GET / 200 in 97ms (next.js: 3ms, application-code: 94ms)
+ GET /pricing 200 in 22ms (next.js: 4ms, application-code: 17ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET / 200 in 26ms (next.js: 6ms, application-code: 20ms)
+✓ Compiled in 415ms
+ GET / 200 in 48ms (next.js: 10ms, application-code: 38ms)
+ GET / 200 in 102ms (next.js: 5ms, application-code: 98ms)
+ GET / 200 in 35ms (next.js: 10ms, application-code: 25ms)
+✓ Compiled in 298ms
+✓ Compiled in 751ms
+ GET / 200 in 139ms (next.js: 35ms, application-code: 104ms)
+✓ Compiled in 251ms
+ GET / 200 in 96ms (next.js: 22ms, application-code: 74ms)
+✓ Compiled in 604ms
+ GET / 200 in 503ms (next.js: 74ms, application-code: 429ms)

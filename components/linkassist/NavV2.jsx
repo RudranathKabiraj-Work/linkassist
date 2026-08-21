@@ -11,9 +11,10 @@ export default function NavV2() {
   const pathname = usePathname();
   const items = [
     { href: "features", label: "Features" },
-    { href: "how", label: "How it works" },
+    { href: "how-it-works", label: "How it works" },
     { href: "pricing", label: "Pricing" },
-    { href: "faq", label: "FAQ" },
+    { href: "tools", label: "Free tools" },
+    { href: "blog", label: "Blog" },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("");
@@ -88,7 +89,20 @@ export default function NavV2() {
   }, []);
 
   useEffect(() => {
-    const ids = ["features", "how", "pricing", "faq"];
+    if (pathname === "/pricing") {
+      setActive("pricing");
+      return;
+    }
+    if (pathname === "/tools") {
+      setActive("tools");
+      return;
+    }
+    if (pathname === "/blog") {
+      setActive("blog");
+      return;
+    }
+
+    const ids = ["features", "how-it-works"];
     const elements = ids.map((id) => document.getElementById(id)).filter(Boolean);
     if (elements.length === 0) return;
 
@@ -116,6 +130,14 @@ export default function NavV2() {
   const PAGES = { tools: "/tools", blog: "/blog", about: "/about", pricing: "/pricing" };
 
   const go = (href) => {
+    if (href === "pricing") {
+      router.push("/pricing");
+      return;
+    }
+    if (PAGES[href] && href !== "features" && href !== "how-it-works") {
+      router.push(PAGES[href]);
+      return;
+    }
     const el = document.getElementById(href);
     if (el && typeof window !== "undefined" && window.location.pathname === "/") {
       window.__isNavScrolling = true;
@@ -139,11 +161,13 @@ export default function NavV2() {
   };
 
   return (
-    <motion.nav
-      initial={{ y: 0 }}
-      animate={{ y: showNav ? 0 : -120 }}
-      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-4 left-0 right-0 z-50 px-4 md:px-8 pointer-events-none"
+    <nav
+      className="fixed left-0 right-0 z-50 px-4 md:px-8 pointer-events-none"
+      style={{
+        top: 8,
+        transform: `translateY(${showNav ? 0 : -120}px)`,
+        transition: 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
+      }}
     >
       <div
         className="max-w-[1180px] mx-auto pointer-events-auto relative overflow-hidden"
@@ -197,7 +221,7 @@ export default function NavV2() {
             className="flex items-center gap-2 border-0 bg-transparent cursor-pointer group"
           >
             <img
-              src="/logo-icon.png"
+              src="/assets/logo-icon.png"
               alt="LinkAssist"
               width={28}
               height={28}
@@ -395,6 +419,6 @@ export default function NavV2() {
           </div>
         )}
       </div>
-    </motion.nav>
+    </nav>
   );
 }
