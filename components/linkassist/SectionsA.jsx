@@ -54,7 +54,7 @@ export function LogoMarquee() {
   );
 }
 
-function Meteors({ number = 12, className = "" }) {
+export function Meteors({ number = 12, className = "" }) {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => {
     setMounted(true);
@@ -125,7 +125,7 @@ function Meteors({ number = 12, className = "" }) {
   );
 }
 
-function FeatureCard({ f }) {
+export function FeatureCard({ f }) {
   const cardRef = useRef(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);

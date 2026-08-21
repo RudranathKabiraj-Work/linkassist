@@ -54,11 +54,13 @@ function PipelineCard({ step, index, total, containerRef }) {
   // Calculate a scale between 0.80 (bottom-most card) and 1.0 (top-most card)
   const minScale = 0.80 + (0.20 / (total - 1)) * index;
 
+  const extraSpacing = isMobile ? 180 : 220;
+
   useEffect(() => {
     const container = containerRef.current;
     if (!container || !cardRef.current) return;
 
-    const SCROLL_PER_CARD = isMobile ? 322 : 242;
+    const SCROLL_PER_CARD = isMobile ? 520 : 480;
 
     const applyScale = () => {
       const el = cardRef.current;
@@ -256,13 +258,17 @@ export default function HowItWorksSection() {
 
         {/* ── Card stack ── */}
         {steps.map((step, idx) => (
-          <PipelineCard
-            key={step.n}
-            step={step}
-            index={idx}
-            total={steps.length}
-            containerRef={containerRef}
-          />
+          <React.Fragment key={step.n}>
+            <PipelineCard
+              step={step}
+              index={idx}
+              total={steps.length}
+              containerRef={containerRef}
+            />
+            {idx < steps.length - 1 && (
+              <div style={{ height: `${isMobile ? 180 : 220}px` }} aria-hidden />
+            )}
+          </React.Fragment>
         ))}
 
         {/* ── Bottom Spacer to allow last card to stack and unstick ── */}

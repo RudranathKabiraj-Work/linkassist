@@ -784,3 +784,252 @@ Incoming: [5, 6, 1, [object Object], false]
  GET / 200 in 201ms (next.js: 35ms, application-code: 166ms)
 ✓ Compiled in 627ms
  GET / 200 in 57ms (next.js: 21ms, application-code: 35ms)
+ GET / 200 in 430ms (next.js: 69ms, application-code: 361ms)
+✓ Compiled in 813ms
+ GET / 200 in 58ms (next.js: 17ms, application-code: 41ms)
+✓ Compiled in 643ms
+ GET / 200 in 64ms (next.js: 16ms, application-code: 48ms)
+✓ Compiled in 77ms
+[browser] ./components/HowItWorksSection.jsx:162:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/HowItWorksSection.jsx:
+./components/HowItWorksSection.jsx:162:1
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Import traces:
+  Client Component Browser:
+    ./components/HowItWorksSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/HowItWorksSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/HowItWorksSection.jsx:162:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/HowItWorksSection.jsx:
+./components/HowItWorksSection.jsx:162:1
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Import traces:
+  Client Component Browser:
+    ./components/HowItWorksSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/HowItWorksSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/HowItWorksSection.jsx:162:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/HowItWorksSection.jsx:
+./components/HowItWorksSection.jsx:162:1
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Import traces:
+  Client Component Browser:
+    ./components/HowItWorksSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/HowItWorksSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/HowItWorksSection.jsx:162:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/HowItWorksSection.jsx:
+./components/HowItWorksSection.jsx:162:1
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Import traces:
+  Client Component Browser:
+    ./components/HowItWorksSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/HowItWorksSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/HowItWorksSection.jsx:162:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/HowItWorksSection.jsx:
+./components/HowItWorksSection.jsx:162:1
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Import traces:
+  Client Component Browser:
+    ./components/HowItWorksSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/HowItWorksSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/HowItWorksSection.jsx:162:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/HowItWorksSection.jsx:
+./components/HowItWorksSection.jsx:162:1
+  160 |     </div>
+  161 |   );
+> 162 | }
+      | ^
+  163 |
+  164 | export default function HowItWorksSection() {
+  165 |   const containerRef = useRef(null);
+
+Import traces:
+  Client Component Browser:
+    ./components/HowItWorksSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/HowItWorksSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+ GET / 200 in 94ms (next.js: 29ms, application-code: 65ms)
+ GET / 200 in 230ms (next.js: 43ms, application-code: 187ms)
+ GET /pricing 200 in 264ms (next.js: 93ms, application-code: 171ms)
+✓ Compiled in 2.8s
+ GET / 200 in 65ms (next.js: 21ms, application-code: 45ms)
+✓ Compiled in 1813ms
+ GET / 200 in 334ms (next.js: 91ms, application-code: 244ms)
+✓ Compiled in 402ms
+✓ Compiled in 91ms
+✓ Compiled in 100ms
+ GET / 200 in 57ms (next.js: 13ms, application-code: 44ms)
+✓ Compiled in 270ms
+✓ Compiled in 227ms
+✓ Compiled in 234ms
+✓ Compiled in 298ms
+✓ Compiled in 1315ms
+ GET / 200 in 734ms (next.js: 418ms, application-code: 316ms)
+ GET / 200 in 321ms (next.js: 17ms, application-code: 304ms)
+✓ Compiled in 202ms
+✓ Compiled in 339ms
+✓ Compiled in 415ms
+✓ Compiled in 244ms
+ GET / 200 in 79ms (next.js: 31ms, application-code: 49ms)
+✓ Compiled in 606ms
+✓ Compiled in 303ms
+✓ Compiled in 254ms
+✓ Compiled in 542ms
+ GET / 200 in 303ms (next.js: 39ms, application-code: 264ms)
+✓ Compiled in 391ms
+ GET / 200 in 63ms (next.js: 17ms, application-code: 45ms)
+✓ Compiled in 1024ms
+ GET / 200 in 44ms (next.js: 10ms, application-code: 34ms)
+[browser] Uncaught ReferenceError: FeaturesSection is not defined
+    at Home (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_160teh4._.js?id=%255Bproject%255D/app/page.jsx+%255Bapp-client%255D+(ecmascript):129:228)
+✓ Compiled in 190ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 524ms (next.js: 29ms, application-code: 495ms)
+✓ Compiled in 1352ms
+✓ Compiled in 2.8s
+ GET / 200 in 210ms (next.js: 29ms, application-code: 180ms)
+✓ Compiled in 1919ms
+ GET / 200 in 172ms (next.js: 24ms, application-code: 148ms)
+ GET / 200 in 144ms (next.js: 7ms, application-code: 137ms)
+ GET / 200 in 254ms (next.js: 6ms, application-code: 248ms)
+✓ Compiled in 281ms
+ GET / 200 in 45ms (next.js: 11ms, application-code: 34ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 94ms
+ GET / 200 in 257ms (next.js: 10ms, application-code: 247ms)
+✓ Compiled in 218ms
+ GET / 200 in 83ms (next.js: 29ms, application-code: 54ms)
