@@ -166,7 +166,6 @@ export default function Hero() {
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 8,
                 background: "linear-gradient(135deg, #0A66C2 0%, #1c83d3 100%)",
                 color: "#fff",
                 border: "1px solid rgba(255, 255, 255, 0.4)",
@@ -179,27 +178,6 @@ export default function Hero() {
               }}
             >
               <span style={{ position: "relative", zIndex: 1 }}>Start Your Free Trial</span>
-              <motion.span
-                variants={{
-                  hover: { x: 4 },
-                }}
-                transition={{ duration: 0.2 }}
-                style={{
-                  position: "relative",
-                  zIndex: 1,
-                  width: 19,
-                  height: 19,
-                  borderRadius: 9999,
-                  background: "rgba(255,255,255,0.2)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
-                }}
-              >
-                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
-              </motion.span>
             </motion.button>
             <a href="#how-it-works" className="btn btn-ghost btn-lg">
               See how it works
@@ -215,6 +193,8 @@ export default function Hero() {
 
         {/* ── Right: Post stack — EXACT positions from V2 HeroV2.jsx ── */}
         <div className={styles.rightCol}>
+          {/* Desktop floating stack — hidden below 1024px */}
+          <div className={styles.desktopStack}>
           {/* Outer: width 100%, height 520, flex justify-end */}
           <div className={styles.outerWrap}>
             {/* Stage: width 550, height 520, position relative */}
@@ -278,6 +258,62 @@ export default function Hero() {
                 </div>
               </div>
 
+            </div>
+          </div>
+          </div>
+
+          {/* Mobile/tablet stack — mirrors linkassist-v2 HeroPostStack mobile view */}
+          <div className={styles.mobileStack}>
+            <div className={`${styles.mCard} ${styles.mCardA}`}>
+              <MiniPost
+                name="Aanya Mehta"
+                role="Solopreneur · 47k followers"
+                time="3h"
+                body="After 3 years of consulting, I've seen one pattern in every founder who scaled past $1M ARR."
+                likes="3.4K"
+                comments="212"
+                avatar="/assets/testimonials/prashum-lucky.png"
+                width="100%"
+              />
+            </div>
+            <div className={`${styles.mCard} ${styles.mCardB}`}>
+              <MiniPost
+                name="Marc Bowen"
+                role="Partner, Atlas Ventures"
+                time="Tomorrow · 9:00 AM"
+                pinned
+                body="We just shipped the messiest launch of our lives. It worked anyway. The 4 lessons:"
+                likes="—"
+                comments="—"
+                avatar="/assets/testimonials/pranav-prathi.png"
+                width="100%"
+              />
+            </div>
+            <div className={`${styles.mCard} ${styles.mCardC}`}>
+              <div style={{ position: 'relative' }}>
+                <div className={styles.aiChip}>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2 14 10 22 12 14 14 12 22 10 14 2 12 10 10 z"/>
+                  </svg>
+                  AI is writing
+                </div>
+                <MiniPost
+                  name="LinkAssist Composer"
+                  role="Drafting · style: 'Aanya M.'"
+                  time="Just now"
+                  pinned
+                  avatar="/assets/logo-icon.png"
+                  width="100%"
+                  body={
+                    <>
+                      {typed}
+                      <span className={styles.caret} />
+                    </>
+                  }
+                  likes="—"
+                  comments="—"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -78,6 +78,18 @@
   align-items: center;
 }
 
+/* ── Desktop stack wrapper (≥1024px only) ── */
+.desktopStack {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* ── Mobile/tablet stack (<1024px) — mirrors linkassist-v2 ── */
+.mobileStack {
+  display: none;
+}
+
 /* ── Outer: full width, 520px tall, flex to push stage right ── */
 .outerWrap {
   display: flex;
@@ -85,8 +97,18 @@
   width: 100%;
   height: 520px;
   position: relative;
-  /* Push visual stage even further rightward */
-  margin-right: -70px;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .outerWrap {
+    margin-right: -64px; /* -mr-16 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .outerWrap {
+    margin-right: -80px; /* -mr-20 */
+  }
 }
 
 /* ── Card stage: exact 550×520 — matches V2 container ── */
@@ -95,6 +117,19 @@
   height: 520px;
   position: relative;
   flex-shrink: 0;
+  transform-origin: right center;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .cardStage {
+    transform: scale(0.65);
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardStage {
+    transform: scale(1);
+  }
 }
 
 /* ── Base card ── */
@@ -120,10 +155,10 @@
   animation-delay: 0s;
 }
 
-/* Card B — Marc Bowen: top:60 left:300 opacity:0.95 z:2 --r:4deg delay:1.4s */
+/* Card B — Marc Bowen: top:60 left:270 opacity:0.95 z:2 --r:4deg delay:1.4s */
 .lcFloatB {
   top: 60px;
-  left: 300px;
+  left: 270px;
   opacity: 0.95;
   z-index: 2;
   --r: 4deg;
@@ -149,7 +184,7 @@
   border-radius: 16px;
   box-shadow: 0 1px 2px rgba(15, 20, 26, 0.04), 0 10px 30px -16px rgba(15, 20, 26, 0.18);
   overflow: hidden;
-  font-family: inherit;
+  font-family: 'Geist', system-ui, sans-serif;
 }
 
 /* Header row */
@@ -227,10 +262,11 @@
 
 /* Post body */
 .mpBody {
-  padding: 2px 14px 8px;
+  padding: 4px 14px 12px;
   font-size: 13px;
-  line-height: 1.45;
+  line-height: 1.55;
   color: #0F141A;
+  white-space: pre-wrap;
 }
 
 /* Footer */
@@ -298,31 +334,40 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 960px) {
+@media (max-width: 1023px) {
+  .hero {
+    padding-bottom: 48px; /* V2: pb-12 */
+  }
   .heroGrid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 40px;
   }
   .rightCol {
     justify-content: center;
+    width: 100%;
   }
-  .outerWrap {
-    justify-content: center;
-    height: 480px;
+  .desktopStack {
+    display: none;
   }
-  .cardStage {
-    width: 500px;
-    transform: scale(0.88);
-    transform-origin: center top;
+  .mobileStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    padding: 24px 0;
   }
 }
 
-@media (max-width: 560px) {
-  .outerWrap {
-    height: 440px;
-  }
-  .cardStage {
-    transform: scale(0.72);
-    transform-origin: center top;
-  }
+/* Mobile cards — normal flow, subtle tilt, gentle bob (V2 lc-card behaviour) */
+.mCard {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  transform: rotate(var(--r, 0deg));
+  animation: lcFloat 4.5s ease-in-out infinite;
+  will-change: transform;
 }
+.mCardA { --r: -1.5deg; filter: drop-shadow(0 6px 12px rgba(15, 20, 26, 0.08)); animation-delay: 0s; }
+.mCardB { --r: 1.5deg;  filter: drop-shadow(0 6px 12px rgba(15, 20, 26, 0.08)); animation-delay: 1.4s; }
+.mCardC { --r: -1deg;   filter: drop-shadow(0 12px 20px rgba(15, 20, 26, 0.14)); animation-delay: 0.7s; }

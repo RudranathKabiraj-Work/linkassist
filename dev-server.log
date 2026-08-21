@@ -184,3 +184,603 @@ Import traces:
  GET / 200 in 96ms (next.js: 22ms, application-code: 74ms)
 ✓ Compiled in 604ms
  GET / 200 in 503ms (next.js: 74ms, application-code: 429ms)
+✓ Compiled in 128ms
+✓ Compiled in 267ms
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+✓ Compiled in 54ms
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/Hero.jsx:299:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/Hero.jsx:
+./components/Hero.jsx:299:1
+  297 |     </section>
+  298 |   );
+> 299 | }
+      | ^
+  300 |
+
+Import traces:
+  Client Component Browser:
+    ./components/Hero.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/Hero.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+✓ Compiled in 1911ms
+ GET / 200 in 603ms (next.js: 301ms, application-code: 302ms)
+✓ Compiled in 96ms
+ GET / 200 in 54ms (next.js: 16ms, application-code: 38ms)
+✓ Compiled in 118ms
+ GET / 200 in 85ms (next.js: 34ms, application-code: 51ms)
+✓ Compiled in 111ms
+✓ Compiled in 971ms
+ GET / 200 in 54ms (next.js: 21ms, application-code: 32ms)
+[browser] ./components/linkassist/NavV2.jsx:427:9
+Error: Expected '</', got ')'
+  425 |             </div>
+  426 |           </div>
+> 427 |         )}
+      |         ^
+  428 |       </div>
+  429 |     </nav>
+  430 |   );
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/linkassist/NavV2.jsx:
+./components/linkassist/NavV2.jsx:427:9
+  425 |             </div>
+  426 |           </div>
+> 427 |         )}
+      |         ^
+  428 |       </div>
+  429 |     </nav>
+  430 |   );
+
+Import traces:
+  Client Component Browser:
+    ./components/linkassist/NavV2.jsx [Client Component Browser]
+    ./app/pricing/page.js [Client Component Browser]
+    ./app/pricing/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/linkassist/NavV2.jsx [Client Component SSR]
+    ./app/pricing/page.js [Client Component SSR]
+    ./app/pricing/page.js [Server Component] 
+[browser] ./components/linkassist/NavV2.jsx:427:9
+Error: Expected '</', got ')'
+  425 |             </div>
+  426 |           </div>
+> 427 |         )}
+      |         ^
+  428 |       </div>
+  429 |     </nav>
+  430 |   );
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/linkassist/NavV2.jsx:
+./components/linkassist/NavV2.jsx:427:9
+  425 |             </div>
+  426 |           </div>
+> 427 |         )}
+      |         ^
+  428 |       </div>
+  429 |     </nav>
+  430 |   );
+
+Import traces:
+  Client Component Browser:
+    ./components/linkassist/NavV2.jsx [Client Component Browser]
+    ./app/pricing/page.js [Client Component Browser]
+    ./app/pricing/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/linkassist/NavV2.jsx [Client Component SSR]
+    ./app/pricing/page.js [Client Component SSR]
+    ./app/pricing/page.js [Server Component] 
+✓ Compiled in 645ms
+ GET / 200 in 90ms (next.js: 18ms, application-code: 73ms)
+✓ Compiled in 272ms
+✓ Compiled in 302ms
+ GET / 200 in 42ms (next.js: 11ms, application-code: 31ms)
+✓ Compiled in 126ms
+✓ Compiled in 376ms
+✓ Compiled in 63ms
+✓ Compiled in 66ms
+ GET / 200 in 125ms (next.js: 5ms, application-code: 120ms)
+✓ Compiled in 107ms
+ GET /tools 404 in 335ms (next.js: 271ms, application-code: 64ms)
+ GET /tools 404 in 67ms (next.js: 11ms, application-code: 56ms)
+✓ Compiled in 463ms
+ GET / 200 in 69ms (next.js: 29ms, application-code: 41ms)
+✓ Compiled in 184ms
+✓ Compiled in 99ms
+✓ Compiled in 593ms
+ GET / 200 in 47ms (next.js: 11ms, application-code: 36ms)
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [0, 6, 0.8, [object Object]]
+Incoming: [0, 6, 0.8, [object Object], false] 
+    at PipelineCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript):159:180)
+    at Set.forEach (<anonymous>) (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript)
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [1, 6, 0.8400000000000001, [object Object]]
+Incoming: [1, 6, 0.8400000000000001, [object Object], false] 
+    at PipelineCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript):159:180)
+    at Set.forEach (<anonymous>) (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript)
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [2, 6, 0.88, [object Object]]
+Incoming: [2, 6, 0.88, [object Object], false] 
+    at PipelineCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript):159:180)
+    at Set.forEach (<anonymous>) (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript)
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [3, 6, 0.92, [object Object]]
+Incoming: [3, 6, 0.92, [object Object], false] 
+    at PipelineCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript):159:180)
+    at Set.forEach (<anonymous>) (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript)
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [4, 6, 0.9600000000000001, [object Object]]
+Incoming: [4, 6, 0.9600000000000001, [object Object], false] 
+    at PipelineCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript):159:180)
+    at Set.forEach (<anonymous>) (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript)
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [5, 6, 1, [object Object]]
+Incoming: [5, 6, 1, [object Object], false] 
+    at PipelineCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript):159:180)
+    at Set.forEach (<anonymous>) (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js?id=%255Bproject%255D/components/HowItWorksSection.jsx+%255Bapp-client%255D+(ecmascript)
+✓ Compiled in 925ms
+ GET / 200 in 50ms (next.js: 12ms, application-code: 37ms)
+✓ Compiled in 501ms
+✓ Compiled in 3.8s
+ GET / 200 in 170ms (next.js: 21ms, application-code: 149ms)
+ GET / 200 in 522ms (next.js: 44ms, application-code: 478ms)
+✓ Compiled in 1002ms
+ GET / 200 in 50ms (next.js: 16ms, application-code: 34ms)
+ GET / 200 in 39ms (next.js: 15ms, application-code: 24ms)
+✓ Compiled in 597ms
+✓ Compiled in 2.5s
+ GET / 200 in 583ms (next.js: 110ms, application-code: 473ms)
+ GET / 200 in 574ms (next.js: 129ms, application-code: 445ms)
+✓ Compiled in 664ms
+ GET / 200 in 39ms (next.js: 11ms, application-code: 28ms)
+✓ Compiled in 738ms
+ GET / 200 in 67ms (next.js: 20ms, application-code: 46ms)
+ GET / 200 in 166ms (next.js: 7ms, application-code: 159ms)
+[browser] Uncaught ReferenceError: setBottomSpacerHeight is not defined
+    at HowItWorksSection[useEffect() > handleResize] (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js:4282:25)
+    at HowItWorksSection[useEffect()] (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js:4287:17)
+    at Home (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js:125:227)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 399ms
+⨯ ReferenceError: bottomSpacerHeight is not defined
+    at HowItWorksSection (components\HowItWorksSection.jsx:267:34)
+  265 |
+  266 |         {/* ── Bottom Spacer to allow last card to stack and unstick ── */}
+> 267 |         <div style={{ height: `${bottomSpacerHeight}px` }} aria-hidden />
+      |                                  ^
+  268 |       </div>
+  269 |     </section>
+  270 |   ); {
+  digest: '2277897396'
+}
+ GET / 500 in 475ms (next.js: 44ms, application-code: 431ms)
+[browser] Uncaught ReferenceError: bottomSpacerHeight is not defined
+    at HowItWorksSection (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js:4513:28)
+    at Home (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_0f4koaj._.js:125:227)
+ GET / 200 in 733ms (next.js: 636ms, application-code: 97ms)
+✓ Compiled in 459ms
+ GET / 200 in 46ms (next.js: 13ms, application-code: 33ms)
+✓ Compiled in 1136ms
+ GET / 200 in 49ms (next.js: 20ms, application-code: 29ms)
+ GET / 200 in 77ms (next.js: 3ms, application-code: 74ms)
+✓ Compiled in 1079ms
+ GET / 200 in 201ms (next.js: 35ms, application-code: 166ms)
+✓ Compiled in 627ms
+ GET / 200 in 57ms (next.js: 21ms, application-code: 35ms)

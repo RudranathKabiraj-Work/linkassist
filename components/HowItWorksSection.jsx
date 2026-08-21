@@ -40,7 +40,7 @@ const steps = [
 function PipelineCard({ step, index, total, containerRef }) {
   const cardRef = useRef(null);
   const rafRef = useRef(null);
-  
+
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 640);
@@ -58,7 +58,7 @@ function PipelineCard({ step, index, total, containerRef }) {
     const container = containerRef.current;
     if (!container || !cardRef.current) return;
 
-    const SCROLL_PER_CARD = 160;
+    const SCROLL_PER_CARD = isMobile ? 322 : 242;
 
     const applyScale = () => {
       const el = cardRef.current;
@@ -99,7 +99,7 @@ function PipelineCard({ step, index, total, containerRef }) {
       window.removeEventListener('scroll', onScroll);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [index, total, minScale, containerRef]);
+  }, [index, total, minScale, containerRef, isMobile]);
 
   const bgGradients = [
     "linear-gradient(135deg, #5BA8E5 0%, #0066B2 100%)",
@@ -111,6 +111,7 @@ function PipelineCard({ step, index, total, containerRef }) {
   ];
 
   const cardMarginBottom = (total - 1 - index) * CARD_TOP_STEP;
+  const wrapperHeight = isMobile ? 340 : 260;
 
   return (
     <div
@@ -119,6 +120,7 @@ function PipelineCard({ step, index, total, containerRef }) {
         top: `${CARD_TOP_BASE + index * CARD_TOP_STEP}px`,
         zIndex: 10 + index,
         marginBottom: `${cardMarginBottom}px`,
+        height: `${wrapperHeight}px`,
       }}
     >
       <div
@@ -161,6 +163,7 @@ export default function HowItWorksSection() {
   const containerRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
   const [bottomOffset, setBottomOffset] = useState(396);
+  const [bottomSpacerHeight, setBottomSpacerHeight] = useState(200);
 
   useEffect(() => {
     const handleResize = () => {
@@ -176,11 +179,15 @@ export default function HowItWorksSection() {
       const headerStickyTop = 108;
       const headerHeight = mobile ? 260 : 200;
 
-      const cardUnstick = cardFirstStickyTop + cardHeight + cardFirstMB;
-      const headerUnstick = headerStickyTop + headerHeight + 48;
+      const cardUnstickLimit = cardFirstStickyTop + cardFirstMB + cardHeight;
 
-      const offset = cardUnstick - headerUnstick;
-      setBottomOffset(offset);
+      // Dynamic spacer: exactly how much space is needed for the last card to reach stack top based on viewport height
+      const lastCardSpacer = Math.max(0, window.innerHeight - cardUnstickLimit);
+      setBottomSpacerHeight(lastCardSpacer);
+
+      const headerUnstickLimit = headerStickyTop + headerHeight + 48;
+      const offset = cardUnstickLimit - headerUnstickLimit;
+      setBottomOffset(Math.max(0, offset));
     };
 
     handleResize();
@@ -257,6 +264,9 @@ export default function HowItWorksSection() {
             containerRef={containerRef}
           />
         ))}
+
+        {/* ── Bottom Spacer to allow last card to stack and unstick ── */}
+        <div style={{ height: `${bottomSpacerHeight}px` }} aria-hidden />
       </div>
     </section>
   );

@@ -316,7 +316,7 @@ export default function NavV2() {
                 e.currentTarget.style.boxShadow = "0 6px 16px -2px rgba(0, 102, 178, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6)";
               }}
             >
-              Start free → 7 days
+              Start your free trial
             </button>
           </div>
 
@@ -354,10 +354,17 @@ export default function NavV2() {
         </div>
 
         {/* Mobile Drawer menu */}
-        {isOpen && (
-          <div
-            className="md:hidden mt-2 border-t border-[rgba(255,255,255,0.2)] flex flex-col gap-1 pt-3 pb-1"
-          >
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              key="mobile-drawer"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+              className="md:hidden mt-2 border-t border-[rgba(255,255,255,0.2)] flex flex-col gap-1 pt-3 pb-1"
+              style={{ overflow: "hidden" }}
+            >
             {items.map((item) => {
               const on = active === item.href;
               return (
@@ -413,11 +420,12 @@ export default function NavV2() {
                   boxShadow: "0 4px 14px rgba(0, 102, 178, 0.35)",
                 }}
               >
-                Start free → 7 days
+                Start your free trial
               </button>
             </div>
-          </div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
