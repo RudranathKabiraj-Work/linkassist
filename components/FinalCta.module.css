@@ -1,0 +1,31 @@
+.closing {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #071B33 0%, #0A2D57 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.closingInner h2 {
+  color: #fff;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 32px auto;
+  max-width: 560px;
+}
+
+.bullets span {
+  font-size: 17px;
+  font-weight: 500;
+  color: #CFE0F7;
+  line-height: 1.6;
+}
+
+.bullets span:last-child {
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+}
