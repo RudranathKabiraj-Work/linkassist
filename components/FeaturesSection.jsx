@@ -13,7 +13,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="section" id="features">
+    <section className="section sky" id="features">
       <div className="container">
         <div className="narrow reveal">
           <p className="eyebrow">Everything In One Place</p>
@@ -26,7 +26,14 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <style>{`
+          @media (min-width: 960px) {
+            #features .features-grid {
+              margin-top: 36px !important;
+            }
+          }
+        `}</style>
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 features-grid">
           {features.map((f, idx) => (
             <FramerScroll key={f.n} delay={idx * 0.08} animation="fade-up">
               <FeatureCard f={f} />

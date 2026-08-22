@@ -202,7 +202,7 @@ export default function HowItWorksSection() {
       id="how-it-works"
       ref={containerRef}
       className="scroll-mt-24 lg:scroll-mt-32 py-10 md:pt-20 md:pb-[120px]"
-      style={{ background: V2.creamDeep }}
+      style={{ background: '#fff' }}
     >
       <div className="max-w-[1100px] mx-auto px-4 md:px-6" style={{ position: 'relative' }}>
 

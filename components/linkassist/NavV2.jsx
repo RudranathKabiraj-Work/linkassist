@@ -69,12 +69,12 @@ export default function NavV2() {
         }
       } else {
         // Show while scrolling UP, hide while scrolling DOWN
-        if (currentY < lastScrollY.current - 4) {
+        if (currentY < lastScrollY.current) {
           if (!showNavRef.current) {
             showNavRef.current = true;
             setShowNav(true);
           }
-        } else if (currentY > lastScrollY.current + 8) {
+        } else if (currentY > lastScrollY.current) {
           if (showNavRef.current) {
             showNavRef.current = false;
             setShowNav(false);
@@ -223,13 +223,13 @@ export default function NavV2() {
             <img
               src="/assets/logo-icon.png"
               alt="LinkAssist"
-              width={28}
-              height={28}
+              width={36}
+              height={36}
               decoding="async"
-              style={{ width: 28, height: 28, borderRadius: 7 }}
+              style={{ width: 36, height: 36, borderRadius: 9 }}
             />
             <span
-              style={{ font: "700 17px/1 Geist", color: V2.ink, letterSpacing: "-0.015em" }}
+              style={{ font: "700 20px/1 Geist", color: V2.ink, letterSpacing: "-0.015em" }}
             >
               LinkAssist
             </span>

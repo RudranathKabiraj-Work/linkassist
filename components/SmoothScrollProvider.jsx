@@ -4,6 +4,11 @@ import Lenis from 'lenis';
 
 export default function SmoothScrollProvider({ children }) {
   useEffect(() => {
+    // Disable smooth scroll on mobile devices (width < 768px)
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      return;
+    }
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -15,12 +20,13 @@ export default function SmoothScrollProvider({ children }) {
       infinite: false,
     });
 
+    let rafId;
     function raf(time) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     // Synchronize anchor link scrolling with Lenis
     const handleAnchorScroll = (e) => {
@@ -43,6 +49,7 @@ export default function SmoothScrollProvider({ children }) {
 
     return () => {
       lenis.destroy();
+      cancelAnimationFrame(rafId);
       document.removeEventListener('click', handleAnchorScroll);
     };
   }, []);

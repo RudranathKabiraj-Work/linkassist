@@ -72,7 +72,7 @@ const rows = [
 
 export default function ComparisonSection() {
   return (
-    <section className="section sky" style={{ background: '#F8FAFC' }}>
+    <section className="section">
       <div className="container">
         <div className="narrow reveal text-center" style={{ marginBottom: 48, margin: '0 auto', textAlign: 'center' }}>
           <p className="eyebrow" style={{ font: '500 11px/1 Geist', color: '#0066B2', letterSpacing: '.14em', textTransform: 'uppercase' }}>

@@ -1,6 +1,6 @@
 export default function ProductSection() {
   return (
-    <section className="section" id="product">
+    <section className="section sky" id="product">
       <div className="container">
         <div className="narrow reveal">
           <p className="eyebrow">Chapter 05 · Meet Link Assist™</p>

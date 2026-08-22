@@ -1,5 +1,5 @@
 .intro {
-  background: #fff;
+  /* Inherits light-blue background from .sky class in globals.css */
 }
 
 .inner {
@@ -10,26 +10,51 @@
   margin-top: 28px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0px;
 }
 
 .lines p {
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--muted);
   margin: 0;
 }
 
-.callout {
+.calloutCard {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(10, 102, 194, 0.12);
+  border-left: 4px solid var(--brand);
+  border-radius: 20px;
+  padding: 24px 32px;
+  margin: 24px auto;
+  max-width: 600px;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -15px rgba(10, 102, 194, 0.08);
+}
+
+.quoteMark {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(10, 102, 194, 0.05);
+  font-family: serif;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.calloutText {
   font-size: 19px !important;
   font-weight: 700 !important;
   color: var(--ink) !important;
-  padding: 18px 24px;
-  border-left: 3px solid var(--brand);
-  background: var(--sky);
-  border-radius: 0 12px 12px 0;
-  text-align: left;
-  margin: 16px 0 !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+  position: relative;
+  z-index: 1;
 }
 
 .needsGrid {
@@ -37,42 +62,55 @@
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
-  margin: 28px auto;
-  max-width: 640px;
+  margin: 14px auto 36px;
+  max-width: 760px;
 }
 
 .need {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: #fff;
+  gap: 10px;
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 10px 18px;
+  padding: 10px 20px;
   font-size: 14.5px;
   font-weight: 600;
   color: var(--ink-2);
-  box-shadow: 0 2px 8px rgba(16, 42, 74, 0.05);
+  box-shadow: 0 2px 8px rgba(16, 42, 74, 0.03);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--brand);
-  flex: none;
+.need:hover {
+  background: var(--sky-2);
+  border-color: rgba(10, 102, 194, 0.3);
+  color: var(--brand);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(10, 102, 194, 0.15);
+}
+
+.iconWrapper {
+  display: inline-grid;
+  place-items: center;
+  color: var(--brand);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.need:hover .iconWrapper {
+  transform: scale(1.15) rotate(5deg);
 }
 
 .conclusion {
-  margin-top: 28px;
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
 }
 
 .conclusion p {
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--muted);
   margin: 0;
 }
@@ -81,4 +119,15 @@
   font-size: 18px !important;
   font-weight: 700 !important;
   color: var(--ink) !important;
+  line-height: 1.6 !important;
+}
+
+@media (max-width: 767px) {
+  .calloutCard {
+    padding: 18px 20px;
+  }
+
+  .calloutText {
+    font-size: 16.5px !important;
+  }
 }

@@ -21,7 +21,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="section sky-2">
+    <section className="section">
       <div className="container">
         <div className="narrow reveal">
           <p className="eyebrow">In Their Words</p>

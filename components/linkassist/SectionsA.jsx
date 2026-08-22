@@ -1,7 +1,7 @@
 // SectionsA — LogoMarquee, FeaturesV2, HowItWorksV2 (Rebuilt for CSS match)
 "use client";
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { V2 } from './Tokens';
 import { Calendar, BarChart3, Bot, Users, Sparkles, Shield, Search, FileText, Star, MessageSq, TrendUp } from './Icons';
@@ -129,6 +129,18 @@ export function FeatureCard({ f }) {
   const cardRef = useRef(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 960px)');
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  // On mobile, always show the "active" state
+  const active = isMobile || isHovered;
 
   const handleMouseMove = (e) => {
     if (!cardRef.current) return;
@@ -142,19 +154,19 @@ export function FeatureCard({ f }) {
   return (
     <motion.article
       ref={cardRef}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ y: -6, scale: 1.015 }}
+      onMouseMove={isMobile ? undefined : handleMouseMove}
+      onMouseEnter={isMobile ? undefined : () => setIsHovered(true)}
+      onMouseLeave={isMobile ? undefined : () => setIsHovered(false)}
+      whileHover={isMobile ? {} : { y: -6, scale: 1.015 }}
       transition={{ duration: 0.25, ease: "easeOut" }}
       style={{
         position: "relative",
         background: "#fff",
-        border: isHovered ? "1px solid rgba(0,102,178,0.35)" : "1px solid rgba(15,20,26,0.08)",
+        border: active ? "1px solid rgba(0,102,178,0.35)" : "1px solid rgba(15,20,26,0.08)",
         borderRadius: 18,
         padding: "26px 26px 22px",
         overflow: "hidden",
-        boxShadow: isHovered
+        boxShadow: active
           ? "0 24px 50px -20px rgba(0,102,178,0.22), 0 0 20px -5px rgba(0,102,178,0.12)"
           : "0 1px 3px rgba(15,20,26,0.02)",
         transition: "border-color .25s, box-shadow .25s",
@@ -162,32 +174,40 @@ export function FeatureCard({ f }) {
     >
       <Meteors number={10} />
 
-      {isHovered && (
+      {active && (
         <div
           aria-hidden
           style={{
             position: "absolute",
             inset: 0,
             pointerEvents: "none",
-            background: `radial-gradient(350px circle at ${mousePos.x}px ${mousePos.y}px, rgba(0,102,178,0.08), transparent 80%)`,
+            background: isMobile
+              ? "radial-gradient(350px circle at 50% 50%, rgba(0,102,178,0.08), transparent 80%)"
+              : `radial-gradient(350px circle at ${mousePos.x}px ${mousePos.y}px, rgba(0,102,178,0.08), transparent 80%)`,
             zIndex: 1,
           }}
         />
       )}
 
       <span
+        aria-hidden
         style={{
           position: "absolute",
-          top: 18,
-          right: 22,
-          font: "600 11px/1 Geist",
-          color: isHovered ? V2.blue : "#B8C2CC",
-          letterSpacing: ".08em",
-          transition: "color .2s ease",
-          zIndex: 2,
+          top: "50%",
+          right: "-20px",
+          transform: "translateY(-50%)",
+          fontSize: "160px",
+          fontWeight: 900,
+          lineHeight: 1,
+          letterSpacing: "-0.04em",
+          color: "rgba(15,20,26,0.04)",
+          pointerEvents: "none",
+          userSelect: "none",
+          zIndex: 0,
+          fontFamily: "Geist, system-ui, sans-serif",
         }}
       >
-        {f.n}
+        {parseInt(f.n, 10)}
       </span>
 
       <motion.div
@@ -199,8 +219,8 @@ export function FeatureCard({ f }) {
           width: 44,
           height: 44,
           borderRadius: 12,
-          background: isHovered ? "rgba(0,102,178,0.08)" : V2.coralTint,
-          color: isHovered ? V2.blue : V2.coralPress,
+          background: active ? "rgba(0,102,178,0.08)" : V2.coralTint,
+          color: active ? V2.blue : V2.coralPress,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -219,7 +239,7 @@ export function FeatureCard({ f }) {
 
       <motion.div
         initial={{ scaleX: 0 }}
-        animate={{ scaleX: isHovered ? 1 : 0 }}
+        animate={{ scaleX: active ? 1 : 0 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
         style={{
           position: "absolute",
@@ -291,7 +311,7 @@ export function FeaturesV2({ density }) {
           title={<>Everything You Need To Grow On LinkedIn. <TypewriterWords text="One Platform." color={V2.coral} /></>}
           sub="Everything works together — exactly the way LinkedIn growth should." />
 
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f, idx) => (
             <FramerScroll key={f.n} delay={idx * 0.08} animation="fade-up">
               <FeatureCard f={f} />

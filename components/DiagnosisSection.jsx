@@ -18,8 +18,8 @@ export default function DiagnosisSection() {
       <div className="container">
         <div className="narrow reveal">
           <p className="eyebrow">Chapter 03 · The Real Problem</p>
-          <h2 className="h-lg">
-            The Real Problem Isn't Content.{' '}
+          <h2 className="h-lg two-lines">
+            <span>The Real Problem Isn't Content.</span>
             <span className="blue">It's The Lack Of A LinkedIn System.</span>
           </h2>
           <p className="lead" style={{ marginTop: 20 }}>

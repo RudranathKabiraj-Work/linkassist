@@ -1033,3 +1033,675 @@ Import traces:
  GET / 200 in 257ms (next.js: 10ms, application-code: 247ms)
 ✓ Compiled in 218ms
  GET / 200 in 83ms (next.js: 29ms, application-code: 54ms)
+ GET / 200 in 396ms (next.js: 8ms, application-code: 388ms)
+✓ Compiled in 105ms
+✓ Compiled in 1123ms
+ GET / 200 in 188ms (next.js: 68ms, application-code: 120ms)
+✓ Compiled in 288ms
+✓ Compiled in 949ms
+ GET / 200 in 76ms (next.js: 15ms, application-code: 62ms)
+✓ Compiled in 68ms
+✓ Compiled in 56ms
+ GET / 200 in 42ms (next.js: 9ms, application-code: 33ms)
+✓ Compiled in 1653ms
+ GET / 200 in 59ms (next.js: 17ms, application-code: 42ms)
+✓ Compiled in 134ms
+ GET / 200 in 61ms (next.js: 24ms, application-code: 38ms)
+ GET / 200 in 103ms (next.js: 3ms, application-code: 99ms)
+✓ Compiled in 214ms
+ GET / 200 in 116ms (next.js: 27ms, application-code: 90ms)
+ GET / 200 in 108ms (next.js: 4ms, application-code: 104ms)
+✓ Compiled in 1722ms
+[browser] Uncaught ReferenceError: useEffect is not defined
+    at FeatureCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js?id=%255Bproject%255D/components/linkassist/SectionsA.jsx+%255Bapp-client%255D+(ecmascript):381:5)
+    at Set.forEach (<anonymous>)
+    at _FeaturesSectionFeaturesMap (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:2092:221)
+    at Array.map (<anonymous>)
+    at FeaturesSection (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:2064:44)
+    at Home (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:130:227)
+⨯ ReferenceError: useEffect is not defined
+    at FeatureCard (components\linkassist\SectionsA.jsx:134:3)
+  132 |   const [isMobile, setIsMobile] = useState(false);
+  133 |
+> 134 |   useEffect(() => {
+      |   ^
+  135 |     const mq = window.matchMedia('(max-width: 960px)');
+  136 |     setIsMobile(mq.matches);
+  137 |     const handler = (e) => setIsMobile(e.matches); {
+  digest: '686020092'
+}
+ GET / 500 in 829ms (next.js: 108ms, application-code: 720ms)
+[browser] Uncaught ReferenceError: useEffect is not defined
+    at FeatureCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:10806:5)
+    at _FeaturesSectionFeaturesMap (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:2092:221)
+    at Array.map (<anonymous>)
+    at FeaturesSection (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:2064:44)
+    at Home (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:130:227)
+⨯ ReferenceError: useEffect is not defined
+    at FeatureCard (components\linkassist\SectionsA.jsx:134:3)
+  132 |   const [isMobile, setIsMobile] = useState(false);
+  133 |
+> 134 |   useEffect(() => {
+      |   ^
+  135 |     const mq = window.matchMedia('(max-width: 960px)');
+  136 |     setIsMobile(mq.matches);
+  137 |     const handler = (e) => setIsMobile(e.matches); {
+  digest: '686020092'
+}
+ GET / 500 in 100ms (next.js: 12ms, application-code: 88ms)
+[browser] Uncaught ReferenceError: useEffect is not defined
+    at FeatureCard (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:10806:5)
+    at _FeaturesSectionFeaturesMap (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:2092:221)
+    at Array.map (<anonymous>)
+    at FeaturesSection (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:2064:44)
+    at Home (file://C:/Users/kabir/OneDrive/Desktop/Link_assist/linkassist/.next/dev/static/chunks/_1pjvey3._.js:130:227)
+ GET / 200 in 355ms (next.js: 36ms, application-code: 318ms)
+✓ Compiled in 2.4s
+ GET / 200 in 69ms (next.js: 19ms, application-code: 50ms)
+ GET / 200 in 2.1s (next.js: 1765ms, application-code: 361ms)
+✓ Compiled in 199ms
+ GET / 200 in 67ms (next.js: 18ms, application-code: 48ms)
+ GET / 200 in 31ms (next.js: 10ms, application-code: 22ms)
+✓ Compiled in 132ms
+ GET / 200 in 29ms (next.js: 7ms, application-code: 22ms)
+✓ Compiled in 71ms
+✓ Compiled in 147ms
+ GET / 200 in 107ms (next.js: 32ms, application-code: 74ms)
+✓ Compiled in 154ms
+ GET / 200 in 89ms (next.js: 34ms, application-code: 55ms)
+✓ Compiled in 109ms
+ GET / 200 in 41ms (next.js: 13ms, application-code: 28ms)
+ GET / 200 in 32ms (next.js: 9ms, application-code: 23ms)
+✓ Compiled in 184ms
+ GET / 200 in 36ms (next.js: 14ms, application-code: 21ms)
+✓ Compiled in 65ms
+✓ Compiled in 309ms
+ GET / 200 in 122ms (next.js: 48ms, application-code: 74ms)
+✓ Compiled in 86ms
+ GET / 200 in 47ms (next.js: 13ms, application-code: 34ms)
+✓ Compiled in 148ms
+ GET / 200 in 70ms (next.js: 16ms, application-code: 54ms)
+ GET / 200 in 106ms (next.js: 6ms, application-code: 99ms)
+✓ Compiled in 98ms
+ GET / 200 in 38ms (next.js: 11ms, application-code: 27ms)
+✓ Compiled in 233ms
+ GET / 200 in 37ms (next.js: 9ms, application-code: 28ms)
+✓ Compiled in 247ms
+ GET / 200 in 81ms (next.js: 16ms, application-code: 65ms)
+✓ Compiled in 206ms
+ GET / 200 in 45ms (next.js: 13ms, application-code: 32ms)
+✓ Compiled in 460ms
+ GET / 200 in 58ms (next.js: 17ms, application-code: 41ms)
+✓ Compiled in 96ms
+ GET / 200 in 48ms (next.js: 21ms, application-code: 27ms)
+✓ Compiled in 84ms
+ GET / 200 in 82ms (next.js: 13ms, application-code: 69ms)
+✓ Compiled in 87ms
+ GET / 200 in 44ms (next.js: 11ms, application-code: 33ms)
+✓ Compiled in 75ms
+ GET / 200 in 49ms (next.js: 12ms, application-code: 37ms)
+ GET / 200 in 33ms (next.js: 8ms, application-code: 24ms)
+✓ Compiled in 64ms
+✓ Compiled in 90ms
+ GET / 200 in 50ms (next.js: 14ms, application-code: 36ms)
+✓ Compiled in 135ms
+ GET / 200 in 41ms (next.js: 12ms, application-code: 28ms)
+✓ Compiled in 55ms
+ GET / 200 in 45ms (next.js: 11ms, application-code: 33ms)
+✓ Compiled in 94ms
+ GET / 200 in 54ms (next.js: 20ms, application-code: 35ms)
+ GET / 200 in 99ms (next.js: 7ms, application-code: 92ms)
+✓ Compiled in 78ms
+ GET / 200 in 66ms (next.js: 12ms, application-code: 54ms)
+✓ Compiled in 95ms
+ GET / 200 in 45ms (next.js: 12ms, application-code: 33ms)
+✓ Compiled in 87ms
+ GET / 200 in 45ms (next.js: 16ms, application-code: 30ms)
+✓ Compiled in 3s
+ GET / 200 in 224ms (next.js: 104ms, application-code: 120ms)
+✓ Compiled in 103ms
+ GET / 200 in 52ms (next.js: 15ms, application-code: 37ms)
+✓ Compiled in 70ms
+ GET / 200 in 62ms (next.js: 14ms, application-code: 48ms)
+✓ Compiled in 65ms
+ GET / 200 in 57ms (next.js: 19ms, application-code: 37ms)
+✓ Compiled in 97ms
+ GET / 200 in 47ms (next.js: 11ms, application-code: 35ms)
+✓ Compiled in 95ms
+ GET / 200 in 64ms (next.js: 13ms, application-code: 51ms)
+ GET / 200 in 109ms (next.js: 5ms, application-code: 105ms)
+✓ Compiled in 121ms
+ GET / 200 in 54ms (next.js: 14ms, application-code: 40ms)
+✓ Compiled in 1932ms
+ GET / 200 in 614ms (next.js: 460ms, application-code: 153ms)
+✓ Compiled in 110ms
+ GET / 200 in 50ms (next.js: 10ms, application-code: 39ms)
+ GET / 200 in 111ms (next.js: 4ms, application-code: 107ms)
+✓ Compiled in 1050ms
+ GET / 200 in 90ms (next.js: 17ms, application-code: 73ms)
+✓ Compiled in 69ms
+ GET / 200 in 46ms (next.js: 10ms, application-code: 36ms)
+ GET / 200 in 123ms (next.js: 4ms, application-code: 118ms)
+✓ Compiled in 2.8s
+ GET / 200 in 52ms (next.js: 14ms, application-code: 38ms)
+✓ Compiled in 50ms
+ GET / 200 in 53ms (next.js: 9ms, application-code: 44ms)
+ GET / 200 in 141ms (next.js: 4ms, application-code: 137ms)
+✓ Compiled in 2.8s
+ GET / 200 in 45ms (next.js: 12ms, application-code: 33ms)
+✓ Compiled in 80ms
+ GET / 200 in 49ms (next.js: 13ms, application-code: 35ms)
+✓ Compiled in 2.2s
+ GET / 200 in 174ms (next.js: 44ms, application-code: 130ms)
+✓ Compiled in 154ms
+ GET / 200 in 130ms (next.js: 66ms, application-code: 63ms)
+ GET / 200 in 38ms (next.js: 11ms, application-code: 27ms)
+✓ Compiled in 105ms
+✓ Compiled in 1709ms
+ GET / 200 in 79ms (next.js: 31ms, application-code: 48ms)
+✓ Compiled in 2.5s
+ GET / 200 in 58ms (next.js: 28ms, application-code: 30ms)
+ GET / 200 in 127ms (next.js: 5ms, application-code: 122ms)
+✓ Compiled in 112ms
+ GET / 200 in 48ms (next.js: 11ms, application-code: 37ms)
+✓ Compiled in 1077ms
+ GET / 200 in 57ms (next.js: 15ms, application-code: 42ms)
+✓ Compiled in 84ms
+ GET / 200 in 67ms (next.js: 16ms, application-code: 51ms)
+✓ Compiled in 79ms
+ GET / 200 in 53ms (next.js: 11ms, application-code: 42ms)
+✓ Compiled in 82ms
+ GET / 200 in 47ms (next.js: 9ms, application-code: 38ms)
+✓ Compiled in 93ms
+ GET / 200 in 54ms (next.js: 11ms, application-code: 44ms)
+✓ Compiled in 104ms
+ GET / 200 in 48ms (next.js: 10ms, application-code: 37ms)
+ GET / 200 in 101ms (next.js: 7ms, application-code: 95ms)
+✓ Compiled in 325ms
+ GET / 200 in 100ms (next.js: 16ms, application-code: 84ms)
+✓ Compiled in 78ms
+ GET / 200 in 67ms (next.js: 10ms, application-code: 57ms)
+✓ Compiled in 96ms
+ GET / 200 in 43ms (next.js: 13ms, application-code: 31ms)
+✓ Compiled in 340ms
+ GET / 200 in 122ms (next.js: 38ms, application-code: 84ms)
+✓ Compiled in 113ms
+ GET / 200 in 91ms (next.js: 16ms, application-code: 74ms)
+✓ Compiled in 80ms
+ GET / 200 in 56ms (next.js: 16ms, application-code: 41ms)
+✓ Compiled in 125ms
+✓ Compiled in 91ms
+ GET / 200 in 41ms (next.js: 11ms, application-code: 31ms)
+✓ Compiled in 87ms
+ GET / 200 in 48ms (next.js: 17ms, application-code: 32ms)
+✓ Compiled in 83ms
+✓ Compiled in 204ms
+✓ Compiled in 151ms
+ GET / 200 in 148ms (next.js: 31ms, application-code: 117ms)
+ GET / 200 in 103ms (next.js: 4ms, application-code: 99ms)
+✓ Compiled in 200ms
+ GET / 200 in 94ms (next.js: 17ms, application-code: 77ms)
+✓ Compiled in 86ms
+ GET / 200 in 81ms (next.js: 14ms, application-code: 67ms)
+✓ Compiled in 96ms
+ GET / 200 in 55ms (next.js: 15ms, application-code: 40ms)
+✓ Compiled in 400ms
+ GET / 200 in 142ms (next.js: 19ms, application-code: 124ms)
+ GET / 200 in 155ms (next.js: 4ms, application-code: 151ms)
+✓ Compiled in 112ms
+ GET / 200 in 193ms (next.js: 5ms, application-code: 188ms)
+✓ Compiled in 109ms
+ GET / 200 in 40ms (next.js: 9ms, application-code: 31ms)
+ GET / 200 in 99ms (next.js: 4ms, application-code: 95ms)
+ GET / 200 in 122ms (next.js: 4ms, application-code: 119ms)
+✓ Compiled in 88ms
+ GET / 200 in 51ms (next.js: 22ms, application-code: 30ms)
+ GET / 200 in 45ms (next.js: 15ms, application-code: 31ms)
+✓ Compiled in 91ms
+ GET / 200 in 125ms (next.js: 3ms, application-code: 122ms)
+✓ Compiled in 864ms
+[browser] ./components/OutcomesSection.jsx:120:1
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  118 |     </section>
+  119 |   );
+> 120 | }
+      | ^
+  121 |
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:120:1
+  118 |     </section>
+  119 |   );
+> 120 | }
+      | ^
+  121 |
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+✓ Compiled in 59ms
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+⨯ ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  [90m122 |[0m     <section className=[32m"section sky"[0m id=[32m"outcomes-section"[0m>
+  [90m123 |[0m       <style>{[32m`[0m
+[31m[1m>[0m [90m124 |[0m [32m        #outcomes-section {[0m
+  [90m    |[0m         [31m[1m^[0m
+  [90m125 |[0m [32m          background: #ffffff;[0m
+  [90m126 |[0m [32m        }[0m
+  [90m127 |[0m [32m        #outcomes-section .timeline {[0m
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+
+./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  [90m122 |[0m     <section className=[32m"section sky"[0m id=[32m"outcomes-section"[0m>
+  [90m123 |[0m       <style>{[32m`[0m
+[31m[1m>[0m [90m124 |[0m [32m        #outcomes-section {[0m
+  [90m    |[0m         [31m[1m^[0m
+  [90m125 |[0m [32m          background: #ffffff;[0m
+  [90m126 |[0m [32m        }[0m
+  [90m127 |[0m [32m        #outcomes-section .timeline {[0m
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  [90m122 |[0m     <section className=[32m"section sky"[0m id=[32m"outcomes-section"[0m>
+  [90m123 |[0m       <style>{[32m`[0m
+[31m[1m>[0m [90m124 |[0m [32m        #outcomes-section {[0m
+  [90m    |[0m         [31m[1m^[0m
+  [90m125 |[0m [32m          background: #ffffff;[0m
+  [90m126 |[0m [32m        }[0m
+  [90m127 |[0m [32m        #outcomes-section .timeline {[0m
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+ GET / 500 in 3.5s (next.js: 2.7s, application-code: 729ms)
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] Uncaught Error: ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+
+
+    at <unknown> (Error: ./components/OutcomesSection.jsx:124:9)
+    at <unknown> (./components/OutcomesSection.jsx:124:9)
+    at <unknown> (Error: (./components/OutcomesSection.jsx:124:9)
+    at <unknown> (./components/OutcomesSection.jsx:124:9)
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+[browser] ./components/OutcomesSection.jsx:124:9
+Error: Expected '</', got '#'
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Parsing ecmascript source code failed
+
+Generated code of loaders [next/dist/build/babel/loader] transform of file content of components/OutcomesSection.jsx:
+./components/OutcomesSection.jsx:124:9
+  122 |     <section className="section sky" id="outcomes-section">
+  123 |       <style>{`
+> 124 |         #outcomes-section {
+      |         ^
+  125 |           background: #ffffff;
+  126 |         }
+  127 |         #outcomes-section .timeline {
+
+Import traces:
+  Client Component Browser:
+    ./components/OutcomesSection.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/OutcomesSection.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component] 
+ GET / 200 in 127ms (next.js: 18ms, application-code: 109ms)
+✓ Compiled in 473ms
+ GET / 200 in 1237ms (next.js: 398ms, application-code: 839ms)
+✓ Compiled in 117ms
+ GET / 200 in 41ms (next.js: 9ms, application-code: 32ms)
+✓ Compiled in 139ms
+ GET / 200 in 91ms (next.js: 14ms, application-code: 77ms)
+✓ Compiled in 97ms
+ GET / 200 in 49ms (next.js: 10ms, application-code: 39ms)
+ GET / 200 in 123ms (next.js: 18ms, application-code: 105ms)
+✓ Compiled in 295ms
+ GET / 200 in 73ms (next.js: 16ms, application-code: 58ms)
+ GET / 200 in 197ms (next.js: 8ms, application-code: 189ms)
+ GET / 200 in 33ms (next.js: 10ms, application-code: 23ms)
+✓ Compiled in 107ms
+ GET / 200 in 111ms (next.js: 6ms, application-code: 106ms)
+✓ Compiled in 146ms
+ GET / 200 in 85ms (next.js: 11ms, application-code: 74ms)
+✓ Compiled in 223ms
+ GET / 200 in 77ms (next.js: 17ms, application-code: 60ms)
+ GET / 200 in 121ms (next.js: 5ms, application-code: 116ms)
+✓ Compiled in 109ms
+ GET / 200 in 50ms (next.js: 17ms, application-code: 33ms)
+✓ Compiled in 101ms
+ GET / 200 in 84ms (next.js: 40ms, application-code: 44ms)
+✓ Compiled in 117ms
+ GET / 200 in 94ms (next.js: 20ms, application-code: 74ms)
+ GET / 200 in 31ms (next.js: 9ms, application-code: 22ms)
+✓ Compiled in 182ms
+✓ Compiled in 132ms
+ GET / 200 in 54ms (next.js: 12ms, application-code: 42ms)
+ GET / 200 in 112ms (next.js: 3ms, application-code: 108ms)
+✓ Compiled in 118ms
+ GET / 200 in 53ms (next.js: 15ms, application-code: 39ms)
+✓ Compiled in 95ms
+ GET / 200 in 61ms (next.js: 9ms, application-code: 52ms)
+✓ Compiled in 128ms
+ GET / 200 in 64ms (next.js: 24ms, application-code: 40ms)
+✓ Compiled in 89ms
+ GET / 200 in 65ms (next.js: 27ms, application-code: 39ms)
+ GET / 200 in 228ms (next.js: 6ms, application-code: 222ms)
+✓ Compiled in 148ms
+ GET / 200 in 109ms (next.js: 19ms, application-code: 91ms)
+ GET / 200 in 98ms (next.js: 4ms, application-code: 93ms)
+ GET / 200 in 41ms (next.js: 9ms, application-code: 32ms)
+✓ Compiled in 112ms
+ GET / 200 in 105ms (next.js: 5ms, application-code: 100ms)
+✓ Compiled in 80ms
+ GET / 200 in 54ms (next.js: 13ms, application-code: 41ms)
+✓ Compiled in 67ms
+ GET / 200 in 48ms (next.js: 10ms, application-code: 38ms)
+✓ Compiled in 118ms
+ GET / 200 in 60ms (next.js: 20ms, application-code: 41ms)
+✓ Compiled in 75ms
+ GET / 200 in 68ms (next.js: 13ms, application-code: 55ms)
+✓ Compiled in 170ms
+ GET / 200 in 175ms (next.js: 12ms, application-code: 164ms)
+ GET / 200 in 119ms (next.js: 3ms, application-code: 115ms)
+✓ Compiled in 187ms
+ GET / 200 in 54ms (next.js: 16ms, application-code: 39ms)
+ GET / 200 in 121ms (next.js: 5ms, application-code: 116ms)
+[?25h
